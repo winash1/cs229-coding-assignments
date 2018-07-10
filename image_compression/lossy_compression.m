@@ -26,5 +26,5 @@ bnew(:,i)=centroid(:,index);
 end
 newb=(reshape(bnew,512,3,512));
 newb=permute(newb,[1,3,2]);
-imwrite(newb,'compressed_file.tiff');
+imshow(uint8(newb));
 
